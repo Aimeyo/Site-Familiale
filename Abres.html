@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arbre Généalogique - Famille OROU YO</title>
+
+
+<link rel="stylesheet" href="Abres.css">
+
+
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<i class="fas fa-crown"></i>
+
+OROU YO
+
+</div>
+
+
+
+<div class="menu">
+
+
+<button onclick="location.href='index.html'">
+<i class="fas fa-home"></i>
+Accueil
+</button>
+
+
+<button onclick="location.href='biographie.html'">
+<i class="fas fa-book"></i>
+Biographie
+</button>
+
+
+<button onclick="location.href='Abres.html'">
+<i class="fas fa-tree"></i>
+Arbre
+</button>
+
+
+<button onclick="location.href='photo.html'">
+<i class="fas fa-image"></i>
+Galerie
+</button>
+
+
+<button onclick="location.href='wassangari.html'">
+<i class="fas fa-crown"></i>
+Tradition
+</button>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+<!-- TITRE -->
+
+
+<header class="titre">
+
+
+<h1>
+🌳 ARBRE GÉNÉALOGIQUE DE LA FAMILLE WASSANGARI
+</h1>
+
+
+<p>
+Histoire et héritage des grandes familles
+</p>
+
+
+</header>
+
+
+
+
+
+
+<!-- SECTION ARBRES -->
+
+
+<section class="arbres">
+
+
+
+
+
+<div class="arbre-card">
+
+<h2>
+<i class="fas fa-tree"></i>
+
+Famille BANGA
+
+</h2>
+
+
+<img src="images/a banga.png"
+alt="Arbre Banga">
+
+
+<button onclick="ouvrirImage('images/a banga.png')">
+
+Voir en grand
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="arbre-card">
+
+<h2>
+<i class="fas fa-tree"></i>
+
+Famille SABI YAMADENI
+
+</h2>
+
+
+<img src="images/a sabi .png"
+alt="Arbre Sabi">
+
+
+<button onclick="ouvrirImage('images/a sabi .png')">
+
+Voir en grand
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="arbre-card">
+
+<h2>
+<i class="fas fa-tree"></i>
+
+Famille BIO TORO
+
+</h2>
+
+
+<img src="images/a bio.png"
+alt="Arbre Bio Toro">
+
+
+<button onclick="ouvrirImage('images/a bio.png')">
+
+Voir en grand
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="arbre-card">
+
+<h2>
+<i class="fas fa-tree"></i>
+
+Famille BANI FELIX
+
+</h2>
+
+
+<img src="images/a bani.png"
+alt="Arbre Bani Felix">
+
+
+<button onclick="ouvrirImage('images/a bani.png')">
+
+Voir en grand
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="arbre-card">
+
+<h2>
+<i class="fas fa-tree"></i>
+
+Famille SANNI OUSSENI
+
+</h2>
+
+
+<img src="images/a sanni.png"
+alt="Arbre Sanni">
+
+
+<button onclick="ouvrirImage('images/a sanni.png')">
+
+Voir en grand
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="arbre-card">
+
+<h2>
+<i class="fas fa-tree"></i>
+
+Famille SABI GOURE ZAKARI
+
+</h2>
+
+
+<img src="images/a pkai.png"
+alt="Arbre Sabi Goure Zakari">
+
+
+<button onclick="ouvrirImage('images/a pkai.png')">
+
+Voir en grand
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- MODALE IMAGE -->
+
+
+<div id="imageModal" class="modal">
+
+
+<span class="fermer" onclick="fermerImage()">
+
+&times;
+
+</span>
+
+
+<img id="imageGrand" class="modal-image">
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer>
+
+© 2026 Famille OROU YO - Patrimoine Wassangari
+
+</footer>
+
+
+
+
+
+
+
+
+<script>
+
+
+// OUVRIR IMAGE
+
+function ouvrirImage(imageSource){
+
+
+let modal=document.getElementById("imageModal");
+
+
+let image=document.getElementById("imageGrand");
+
+
+
+image.src=imageSource;
+
+
+
+modal.style.display="flex";
+
+
+}
+
+
+
+
+
+// FERMER IMAGE
+
+
+function fermerImage(){
+
+
+document.getElementById("imageModal").style.display="none";
+
+
+}
+
+
+
+
+
+
+// FERMER EN CLIQUANT A L'EXTERIEUR
+
+
+window.onclick=function(event){
+
+
+let modal=document.getElementById("imageModal");
+
+
+if(event.target == modal){
+
+
+modal.style.display="none";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

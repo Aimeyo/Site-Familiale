@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Galerie Famille OROU YO</title>
+
+<link rel="stylesheet" href="photo.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fas fa-crown"></i>
+OROU YO
+</div>
+
+
+<div class="menu">
+
+<a href="index.html">
+<i class="fas fa-home"></i> Accueil
+</a>
+
+
+<a href="biographie.html">
+<i class="fas fa-book"></i> Biographie
+</a>
+
+
+<a href="Abres.html">
+<i class="fas fa-tree"></i> Arbre
+</a>
+
+
+<a href="galerie.html">
+<i class="fas fa-images"></i> Galerie
+</a>
+
+
+<a href="wassangari.html">
+<i class="fas fa-crown"></i> Tradition
+</a>
+
+
+</div>
+
+</nav>
+
+
+
+<header class="hero">
+
+<h1>
+📸 Galerie Famille OROU YO
+</h1>
+
+<p>
+Mémoire, histoire et patrimoine Wassangari
+</p>
+
+</header>
+
+
+
+
+<!-- AJOUT MEDIA -->
+
+
+<section class="upload">
+
+
+<h2>
+<i class="fa fa-upload"></i>
+Ajouter un souvenir
+</h2>
+
+
+<input type="file" 
+id="mediaInput"
+accept="image/*,video/*">
+
+
+<button onclick="ajouterMedia()">
+
+<i class="fa fa-plus"></i>
+Ajouter
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+<!-- GALERIE -->
+
+
+<section class="galerie">
+
+
+<h2>
+<i class="fa fa-photo-film"></i>
+Nos souvenirs
+</h2>
+
+
+<div id="container" class="grid">
+
+
+
+<div class="card">
+
+
+<img src="images/s1.png">
+
+
+<div class="buttons">
+
+<a href="images/s1.png"
+download>
+
+<button class="download">
+
+<i class="fa fa-download"></i>
+
+Télécharger
+
+</button>
+
+</a>
+
+
+
+<button onclick="changer(this)"
+class="change">
+
+<i class="fa fa-edit"></i>
+
+Changer
+
+</button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<video controls>
+
+<source src="KRYS_M_-_Je_pleure__official_video_(360p).mp4">
+
+</video>
+
+
+<div class="buttons">
+
+
+<a href="KRYS_M_-_Je_pleure__official_video_(360p).mp4"
+download>
+
+<button class="download">
+
+<i class="fa fa-download"></i>
+
+Télécharger
+
+</button>
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- LIGHTBOX -->
+
+
+<div id="popup"
+onclick="fermer()">
+
+
+<img id="imagePopup">
+
+
+</div>
+
+
+
+
+
+<footer>
+
+© 2026 Famille OROU YO |
+Héritage Wassangari
+
+</footer>
+
+
+
+<script src="galerie.js"></script>
+
+
+</body>
+
+</html>

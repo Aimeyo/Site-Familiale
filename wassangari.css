@@ -1,0 +1,1149 @@
+/* =====================================================
+   WASSANGARI - RASAGE PRINCIER
+   DESIGN ROYAL PREMIUM
+   ===================================================== */
+
+
+
+:root{
+
+    --bleu-roi:#06152f;
+
+    --bleu:#0b3d91;
+
+    --or:#d4af37;
+
+    --or-clair:#f5dc8a;
+
+    --blanc:#ffffff;
+
+    --ivoire:#faf7ef;
+
+    --ombre:
+    0 20px 50px rgba(0,0,0,.25);
+
+}
+
+
+
+/* ================= RESET ================= */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #06152f,
+        #0b3d91
+    );
+
+
+    color:#333;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar{
+
+
+    position:fixed;
+
+
+    top:0;
+
+
+    width:100%;
+
+
+    height:80px;
+
+
+    padding:0 8%;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    background:
+
+    rgba(255,255,255,.95);
+
+
+    backdrop-filter:blur(15px);
+
+
+    z-index:1000;
+
+
+    box-shadow:
+
+
+    0 10px 30px rgba(0,0,0,.2);
+
+
+}
+
+
+
+.logo{
+
+
+    font-size:30px;
+
+
+    font-weight:800;
+
+
+    color:var(--bleu-roi);
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+.logo i{
+
+
+    color:var(--or);
+
+
+    margin-right:10px;
+
+
+}
+
+
+
+.menu{
+
+
+    display:flex;
+
+
+    gap:30px;
+
+
+    list-style:none;
+
+
+}
+
+
+
+.menu a{
+
+
+    text-decoration:none;
+
+
+    color:var(--bleu-roi);
+
+
+    font-weight:bold;
+
+
+    position:relative;
+
+
+}
+
+
+
+.menu a::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    height:3px;
+
+
+    background:var(--or);
+
+
+    width:0;
+
+
+    bottom:-8px;
+
+
+    left:0;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.menu a:hover::after{
+
+
+    width:100%;
+
+
+}
+
+
+
+.menu-btn{
+
+
+    display:none;
+
+
+    background:none;
+
+
+    border:none;
+
+
+    font-size:30px;
+
+
+}
+
+
+
+/* ================= HERO ================= */
+
+
+
+.hero{
+
+
+    min-height:100vh;
+
+
+    padding:
+
+    130px 8% 70px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    gap:60px;
+
+
+    color:white;
+
+
+}
+
+
+
+.hero h1{
+
+
+    font-size:60px;
+
+
+    line-height:1.2;
+
+
+    animation:
+
+    apparition 1.5s;
+
+
+}
+
+
+
+.hero span{
+
+
+    color:var(--or);
+
+
+}
+
+
+
+.hero p{
+
+
+    font-size:22px;
+
+
+    margin:30px 0;
+
+
+}
+
+
+
+.btn{
+
+
+    display:inline-block;
+
+
+    padding:
+
+    15px 40px;
+
+
+    background:var(--or);
+
+
+    color:#111;
+
+
+    border-radius:50px;
+
+
+    font-weight:bold;
+
+
+    text-decoration:none;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.btn:hover{
+
+
+    background:white;
+
+
+    transform:
+
+    translateY(-10px);
+
+
+    box-shadow:var(--ombre);
+
+
+}
+
+
+
+.hero img{
+
+
+    width:450px;
+
+
+    height:450px;
+
+
+    object-fit:cover;
+
+
+    border-radius:50%;
+
+
+    border:
+
+    10px solid var(--or);
+
+
+    box-shadow:
+
+
+    0 30px 70px rgba(0,0,0,.5);
+
+
+    animation:
+
+    flottement 5s infinite;
+
+
+}
+
+
+
+/* ================= SOMMAIRE ================= */
+
+
+.sommaire{
+
+
+    background:white;
+
+
+    padding:70px 8%;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.sommaire h2{
+
+
+    color:var(--bleu-roi);
+
+
+}
+
+
+
+.menu-card{
+
+
+    margin-top:40px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    flex-wrap:wrap;
+
+
+    gap:20px;
+
+
+}
+
+
+
+.menu-card a{
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        var(--bleu),
+        var(--bleu-roi)
+    );
+
+
+    color:white;
+
+
+    padding:
+
+    15px 25px;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.menu-card a:hover{
+
+
+    background:var(--or);
+
+
+    color:#111;
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+/* ================= ARTICLE ================= */
+
+
+.article{
+
+
+    width:90%;
+
+
+    margin:50px auto;
+
+
+    background:white;
+
+
+    padding:50px;
+
+
+    border-radius:30px;
+
+
+    box-shadow:var(--ombre);
+
+
+    animation:
+
+    apparition-bas 1s;
+
+
+}
+
+
+
+.article h2{
+
+
+    text-align:center;
+
+
+    color:var(--bleu-roi);
+
+
+    font-size:35px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.article h2::after{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:90px;
+
+
+    height:5px;
+
+
+    background:var(--or);
+
+
+    margin:15px auto;
+
+
+}
+
+
+
+.article p{
+
+
+    text-align:justify;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+.citation{
+
+
+    margin:40px 0;
+
+
+    padding:30px;
+
+
+    background:
+
+
+    linear-gradient(
+        135deg,
+        var(--bleu-roi),
+        var(--bleu)
+    );
+
+
+    color:white;
+
+
+    border-left:
+
+    8px solid var(--or);
+
+
+    font-size:22px;
+
+
+    text-align:center;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+/* ================= ENCADRES ================= */
+
+
+
+.info-box{
+
+
+    background:
+
+    var(--ivoire);
+
+
+    padding:30px;
+
+
+    margin:25px 0;
+
+
+    border-left:
+
+    6px solid var(--or);
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+.info-box h3{
+
+
+    color:var(--bleu);
+
+
+}
+
+
+
+/* ================= IMAGES ARTICLE ================= */
+
+
+.article-image{
+
+
+    width:70%;
+
+
+    margin:40px auto;
+
+
+    border-radius:25px;
+
+
+    display:block;
+
+
+    box-shadow:var(--ombre);
+
+
+}
+
+
+
+.article img:hover{
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+img{
+
+
+    transition:.5s;
+
+
+}
+
+
+
+/* ================= GALERIE ================= */
+
+
+.gallery{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:30px;
+
+
+    margin-top:40px;
+
+
+}
+
+
+
+.gallery img{
+
+
+    width:100%;
+
+
+    height:250px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    border:
+
+    5px solid var(--or);
+
+
+    box-shadow:
+
+
+    0 15px 30px rgba(0,0,0,.2);
+
+
+}
+
+
+
+.gallery img:hover{
+
+
+    transform:
+
+    scale(1.08);
+
+
+}
+
+
+
+
+
+/* ================= REFERENCES ================= */
+
+
+
+.article li{
+
+
+    margin:15px;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+
+    background:#020b20;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:40px;
+
+
+}
+
+
+
+footer h3{
+
+
+    color:var(--or);
+
+
+    font-size:30px;
+
+
+}
+
+
+
+/* ================= ANIMATIONS ================= */
+
+
+
+@keyframes apparition{
+
+
+from{
+
+opacity:0;
+
+transform:translateX(-80px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+
+}
+
+
+
+@keyframes apparition-bas{
+
+
+from{
+
+
+opacity:0;
+
+transform:translateY(50px);
+
+
+}
+
+to{
+
+
+opacity:1;
+
+transform:translateY(0);
+
+
+}
+
+}
+
+
+
+@keyframes flottement{
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+
+}
+
+
+
+/* ================= TABLETTE ================= */
+
+
+@media(max-width:992px){
+
+
+
+.hero{
+
+
+flex-direction:column;
+
+
+text-align:center;
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:45px;
+
+
+}
+
+
+
+.hero img{
+
+
+width:330px;
+
+
+height:330px;
+
+
+}
+
+
+
+.gallery{
+
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+
+}
+
+
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:600px){
+
+
+
+.navbar{
+
+
+padding:0 20px;
+
+
+}
+
+
+
+.menu{
+
+
+display:none;
+
+
+position:absolute;
+
+
+top:80px;
+
+
+left:0;
+
+
+width:100%;
+
+
+background:white;
+
+
+flex-direction:column;
+
+
+text-align:center;
+
+
+padding:30px;
+
+
+}
+
+
+
+.menu.active{
+
+
+display:flex;
+
+
+}
+
+
+
+.menu-btn{
+
+
+display:block;
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:32px;
+
+
+}
+
+
+
+.hero p{
+
+
+font-size:17px;
+
+
+}
+
+
+
+.hero img{
+
+
+width:250px;
+
+
+height:250px;
+
+
+}
+
+
+
+.article{
+
+
+padding:25px;
+
+
+}
+
+
+
+.article h2{
+
+
+font-size:27px;
+
+
+}
+
+
+
+.article p{
+
+
+font-size:16px;
+
+
+}
+
+
+
+.gallery{
+
+
+grid-template-columns:
+
+1fr;
+
+
+}
+
+
+
+.article-image{
+
+
+width:100%;
+
+
+}
+
+
+}

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="azerty.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biographie | Famille OROU YO</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.8;
+}
+
+/**************** MENU ****************/
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#0d3b66;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+nav{
+max-width:1300px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#fff;
+}
+
+nav ul{
+display:flex;
+gap:15px;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+transition:.4s;
+
+}
+
+nav ul li a:hover{
+
+background:#ffffff;
+color:#0d3b66;
+
+}
+
+/**************** HERO ****************/
+
+.hero{
+
+background:url("s1.png") center/cover;
+
+height:420px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+position:relative;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+}
+
+/**************** RECHERCHE ****************/
+
+.search{
+
+max-width:1200px;
+
+margin:40px auto;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.search input{
+
+width:100%;
+
+max-width:700px;
+
+padding:16px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}
+
+/**************** PDF ****************/
+
+.documents{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:20px;
+
+}
+
+.documents a{
+
+background:white;
+
+text-decoration:none;
+
+color:#0d3b66;
+
+padding:20px;
+
+border-radius:15px;
+
+font-size:18px;
+
+font-weight:bold;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.documents a:hover{
+
+background:#0d3b66;
+
+color:white;
+
+transform:translateY(-8px);
+
+}
+
+/**************** BIOGRAPHIE ****************/
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:30px;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:30px;
+
+color:#0d3b66;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+display:grid;
+
+grid-template-columns:320px 1fr;
+
+margin-bottom:40px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.card img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.card img:hover{
+
+transform:scale(1.05);
+
+}
+
+.content{
+
+padding:30px;
+
+}
+
+.content h2{
+
+color:#0d3b66;
+
+margin-bottom:20px;
+
+font-size:30px;
+
+}
+
+.content p{
+
+text-align:justify;
+
+font-size:18px;
+
+}
+
+/**************** RESPONSIVE ****************/
+
+@media(max-width:900px){
+
+.card{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+nav{
+
+justify-content:center;
+
+}
+
+}
+
+footer{
+
+background:#0d3b66;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+margin-top:60px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-tree"></i>
+
+Famille OROU YO
+
+</div>
+
+<ul>
+
+<li><a href="Index.html"><i class="fa fa-home"></i> Accueil</a></li>
+
+<li><a href="biographie.html"><i class="fa fa-book"></i> Biographie</a></li>
+
+<li><a href="Abres.html"><i class="fa fa-sitemap"></i> Arbre</a></li>
+
+<li><a href="photo.html"><i class="fa fa-image"></i> Galerie</a></li>
+
+<li><a href="wassangari.html"><i class="fa fa-landmark"></i> Tradition</a></li>
+
+<li><a href="evenement.html"><i class="fa fa-calendar"></i> Evènements</a></li>
+
+<li><a href="village.html"><i class="fa fa-map"></i> Village</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Famille OROU YO</h1>
+
+<p>Histoire • Généalogie • Héritage • Tradition</p>
+
+</div>
+
+</section>
+
+<section class="search">
+
+<input type="text" placeholder="🔍 Rechercher un membre de la famille...">
+
+</section>
+
+<section class="documents">
+
+<a href="PAGE DE GARDE final.pdf">
+
+<i class="fa-solid fa-file-pdf"></i>
+
+Page de garde
+
+</a>
+
+<a href="page de garde final 2.pdf">
+
+<i class="fa-solid fa-book-open"></i>
+
+Deuxième page
+
+</a>
+
+<a href="GUERA-CHABI-YORO-Yarou.pdf">
+
+<i class="fa-solid fa-scroll"></i>
+
+Tradition Wassangari
+
+</a>
+
+<a href="BIOGRAPHIE OROU YO version finale.pdf">
+
+<i class="fa-solid fa-download"></i>
+
+Biographie complète
+
+</a>
+<br><br>
+
+<a href="descendants.html">
+
+<i class="fa-solid fa-scroll"></i>
+
+Découvrir les DESCENDANTS
+</a>
+
+
+</section>
+
+<div class="container">
+
+<h1 class="title">
+
+LES DESCENDANTS OROU YO DE LA PREMIÈRE GÉNÉRATION
+
+</h1>
+
+<div class="content">
+
+<h2>OR0U YO</h2>
+
+
+
+<!-- Ici vous collez le très long texte que vous avez envoyé
+sur Orou Yo, sans rien modifier. -->
+
+  <p>
+    <strong>OROU YO</strong>, né vers <strong>1896 à Tokey Missirou Bansou</strong>,
+    était un grand cultivateur reconnu pour son courage, sa sagesse et son
+    attachement au travail. Homme calme et laborieux, il considérait le travail
+    comme une valeur essentielle permettant de préserver la dignité humaine.
+</p>
+
+<p>
+    Son histoire est marquée par son union avec <strong>Gotoungo (Gniré)</strong>,
+    princesse wassangari du clan des Tossou de Ounet. Leur rencontre et leur
+    appartenance commune à la même lignée royale ont conduit à une décision de
+    la cour royale de Ounet qui officialisa leur mariage.
+</p>
+
+<p>
+    De cette union naquirent plusieurs enfants, notamment
+    <strong>Orou, Sabi Yamadéni, Gnon Magahia, Bio Toro, Félix et Sanni Tailleur</strong>,
+    qui ont marqué l'histoire familiale par leurs différents talents.
+    Orou Yo rendit l'âme vers <strong>1975 à Tokey Missirou Bansou</strong>,
+    où il fut enterré.
+</p>
+
+<p>
+    Fils d'un prince wassangari originaire de <strong>Bouay (Bembèrèkè)</strong>,
+    issu du clan des <strong>Tossou Bouay</strong> de la cour royale de Nikki,
+    Orou Yo appartient à une grande lignée historique wassangari ayant laissé
+    un héritage culturel important.
+</p>
+
+<!-- </div> -->
+</div>
+<!-- ================= GOTOUGO ================= -->
+
+<div class="card">
+
+    <img src="images/bb.png" alt="Gotougo">
+
+    <div class="content">
+
+        <h2>GOTOUGO (GNIRÉ)</h2>
+<p>
+    <strong>GO KÙN TUKO (GNIRÉ)</strong>, princesse wassangari de
+    <strong>Ounet</strong>, est connue sous ce surnom qui signifie
+    <em>« Nul n'est étranger »</em>. Elle fut une femme remarquable par son
+    humilité, sa douceur, sa générosité et son hospitalité légendaire.
+</p>
+
+<p>
+    Elle accueillait tous les étrangers sans distinction d'origine ou d'ethnie,
+    les traitant comme les membres de sa propre famille. Sa maison était un lieu
+    d'accueil et de partage, comme l'illustre le séjour du vieux Peulh
+    <strong>Kouri</strong> qui vécut plusieurs années auprès d'elle.
+</p>
+
+<p>
+    Grande artisane du fil traditionnel, commerçante et guérisseuse reconnue,
+    elle possédait un savoir-faire précieux qui a marqué plusieurs générations.
+    Issue d'une grande lignée familiale, elle transmit l'image d'une femme de
+    paix et de bonté. Elle rendit l'âme en <strong>1999 à Tokey-Banta</strong>,
+    laissant derrière elle un héritage fondé sur l'amour du prochain et
+    l'hospitalité.
+</p>
+
+    </div>
+
+</div>
+
+<!-- ================= SABI YAMADÉNI ================= -->
+
+<div class="card">
+
+    <img src="images/sabi.png" alt="Sabi Yamadéni">
+
+    <div class="content">
+
+        <h2>SABI YAMADÉNI</h2>
+
+<p class="resume">
+    <strong>Résumé :</strong><br><br>
+
+    Sabi Yamadéni, premier fils d'Orou Yô, fut un grand cultivateur et réparateur de vélos.<br><br>
+
+    Il participa à la fondation du village de Batran et contribua à l'introduction de nouvelles techniques agricoles qui améliorèrent les rendements des cultivateurs.<br><br>
+
+    Homme généreux et solidaire, il venait régulièrement en aide aux familles, notamment aux femmes venant d'accoucher, ce qui lui valut une grande estime dans son village.<br><br>
+
+    Avec son frère Sanni Tailleur, il œuvra également à la protection de l'environnement en plantant de nombreux arbres fruitiers et forestiers.<br><br>
+
+    Marié à trois épouses, il eut plusieurs enfants de la génération des Wuré et laissa un héritage fondé sur le travail, la générosité, l'unité familiale et le développement communautaire.<br><br>
+
+    Il s'est éteint le 8 mars 2006 et repose à Batran.
+</p>
+</p>
+        
+
+    </div>
+
+</div>
+
+<!-- ================= BIO TORO ================= -->
+
+<div class="card">
+
+    <img src="images/bio.png" alt="Bio Toro">
+
+    <div class="content">
+
+        <h2>BIO TORO</h2>
+ 
+<p>
+    <strong>BIO TORO (IDRISSOU), surnommé « TORO MISSE »</strong>, est né vers
+    <strong>1933 à Tokey</strong>. Troisième fils de <strong>Orou Yô</strong>,
+    il fut un grand artisan reconnu pour son talent exceptionnel en
+    <strong>menuiserie et charpenterie</strong>, un savoir-faire qu'il transmit
+    à plusieurs générations de sa famille.
+</p>
+
+<p>
+    Respecté pour son courage, sa rigueur et sa générosité, il occupa une place
+    importante dans la communauté de Tokey-Banta. Après sa conversion à
+    <strong>l'Islam en 1980</strong>, il prit le nom d'<strong>Idrissou</strong>,
+    effectua le pèlerinage à <strong>La Mecque en 1997</strong> et devint
+    <strong>l'imam de Tokey</strong>.
+</p>
+
+<p>
+    Homme de paix et de valeurs, il consacra sa vie à sa famille et à la
+    transmission de son héritage culturel. Marié à quatre femmes, il eut
+    plusieurs enfants de la génération des <strong>Wuré</strong>.
+    Il rendit l'âme le <strong>28 mars 2014 à Tokey</strong> et fut enterré
+    au cimetière musulman aux côtés de son épouse <strong>Azia Fati</strong>.
+</p>
+          
+        
+    </div>
+
+</div>
+
+<!-- ================= BANI FELIX ================= -->
+
+<div class="card">
+
+    <img src="images/bani.png" alt="Bani Félix">
+
+    <div class="content">
+
+        <h2>BANI FÉLIX</h2>
+<p>
+    <strong>SANNI OSSÉNI (TAMOU)</strong>, né vers <strong>1941</strong>, est
+    le dernier fils du couple <strong>Orou Yô et Gotougo</strong>. De la
+    génération des <strong>Kpaï</strong>, il fut un grand tailleur traditionnel
+    et un cultivateur exceptionnel, reconnu pour son savoir-faire dans le
+    labour de la terre.
+</p>
+
+<p>
+    Formé à la couture à <strong>Parakou</strong> auprès de
+    <strong>Sabi Yarou</strong>, il marqua également son époque par son talent
+    unique dans l'utilisation de la charrue, réalisant des sillons parfaitement
+    droits et réguliers. Il transmit ce savoir à ses proches, notamment
+    <strong>Bio Alassane</strong> et <strong>Sabi Bouaima</strong>.
+</p>
+
+<p>
+    Attaché à son identité culturelle wassangari, il fut rasé à
+    <strong>Ounet en 2015</strong> et reçut le nom de <strong>Tamou</strong>.
+    Marié à trois femmes, il eut plusieurs enfants de la génération des
+    <strong>Wuré</strong>. Il rendit l'âme le <strong>dimanche 10 mai 2020</strong>
+    vers 18 heures et fut enterré à <strong>Batran</strong>.
+</p>
+    </div>
+
+</div>
+
+<!-- ================= SANNI ================= -->
+
+<div class="card">
+
+    <img src="images/sanni.png" alt="Sanni">
+
+    <div class="content">
+
+        <h2>SANNI OSSÉNI</h2>
+
+       <p>
+    <strong>FÉLIX (KPAÏ) – ZIMÉ</strong>, né vers <strong>1937 à Tokey</strong>,
+    est le quatrième fils de <strong>Orou Yô</strong>. Grand menuisier et
+    charpentier, il passa une grande partie de sa vie à <strong>Goumori</strong>
+    où il développa son savoir-faire auprès de son frère
+    <strong>Bio Toro</strong> et des prêtres catholiques.
+</p>
+
+<p>
+    De confession chrétienne, il fut un homme de paix, de générosité et
+    d'hospitalité. Considéré comme un <strong>« TUKO SARI »</strong>, il
+    accueillait tout le monde sans distinction et consacra sa vie à aider
+    son prochain. Travailleur et courageux, il construisit lui-même sa maison
+    et transmit ses valeurs à sa famille.
+</p>
+
+<p>
+    Malgré sa foi chrétienne, il resta attaché à son identité culturelle
+    wassangari. En <strong>2015</strong>, il fut rasé à la cour royale de
+    <strong>Ounet</strong> et reçut le nom de <strong>Zimé</strong>.
+    Marié à trois femmes, il eut plusieurs enfants de la génération des
+    <strong>Wuré</strong>. Il rendit l'âme le <strong>14 janvier 2021</strong>
+    à <strong>Goumori</strong>, où il fut enterré dans la paix du Christ.
+</p>   
+    </div>
+
+</div>
+
+<!-- ================= PKAI ================= -->
+
+<div class="card">
+
+    <img src="images/pkai.png" alt="Sabi Gouré">
+
+    <div class="content">
+
+        <h2>SABI GOURÉ</h2>
+<p class="p"> De la génération des pkaï, il est l’enfant du petit frère de Orou Yô. 
+Cultivateur, il fabriquait aussi les paniers traditionnels appelés ‘’Bileru’’ en 
+Baatonou. Son père s’appelait Sabi. Ce dernier a été pris de force pendant la 
+révolution pour les services militaires, mais il n’est plus revenu. Ce qui a poussé 
+Orou Yô à récupérer son enfant Sabi Gouré de Soudou. Il s’est marié à deux 
+femmes suivant l’ordre suivant :
+<br>
+<p> -FATOUMA : ses enfants sont : Orou, Sabi, Bio Arouna, Bani Séïdou, Alima, 
+Wahabou, Issiaka, Bana Bou (Amida) , Penon Mounira, Orou Bou (Aminou).</p>
+<br>
+<p>-BIBA : ses enfants sont : Moustapha, Roukaya , Samitatou, Bachirou, Taïba, 
+Bani Nassirou. </p>
+<br>
+<p>Tous ses enfants sont de la génération des Wuré. 
+Le vieux a rendu l’âme le 11 Juin 2020 à Tokey Banta où il a été enterré au 
+cimetière des musulmans.</p> 
+    </div>
+
+</div>
+
+<!-- ================= AMBIANCE ================= -->
+
+<!-- <div class="card"> -->
+
+    <!-- <div class="content"> -->
+
+        <h2>L'ambiance familiale</h2>
+<section class="resume-famille">
+    <h2>Résumé</h2>
+
+    <p>
+        La famille <strong>OROU YO</strong> s'est distinguée par son unité, sa solidarité et
+        son excellente organisation. Les enfants étaient élevés sans distinction entre
+        les différentes branches familiales, favorisant un fort esprit de fraternité.
+        Grâce à une répartition équilibrée des responsabilités, chaque membre
+        contribuait au bien-être de la famille, faisant d'elle un véritable modèle de
+        cohésion à Tokey, Batran et Goumori.
+    </p>
+
+    <p>
+        Attachée à ses traditions tout en respectant les différentes croyances
+        religieuses, la famille a su préserver son identité culturelle wassangari.
+        Plusieurs de ses membres ont également joué un rôle important dans le
+        développement social, traditionnel et politique de leur communauté.
+    </p>
+
+    <p>
+        L'héritage laissé par les anciens repose sur des valeurs essentielles :
+        <strong>l'union, le travail, le respect, la solidarité et la fraternité</strong>.
+        Ces principes continuent d'inspirer les générations actuelles afin de
+        préserver l'intérêt supérieur de la famille et d'assurer son développement.
+    </p>
+</section>
+    <!-- </div> -->
+
+<!-- </div> -->
+
+<!-- ================= SOURCES ================= -->
+
+<!-- <div class="card"> -->
+
+    <div class="content">
+
+        <h2>Sources et personnes interrogées</h2>
+ 
+<u>Ounet : </u>
+<p>Sero Sirou :  interrogé le 10 Janvier 2023 à Ounet 
+Sabi Tègnor Bio Sama : 10 Janvier 2023 à Ounet 
+Kouma (Fils ainé de de Sorokou) 11 Février 2023 à Ounet  
+MaÏmou, membre le Famille Gotougo : interrogée 11 Février 2023 à Ounet 
+TOUNDO, ancien CA de Ounet : interrogé le 11 Février 2023 à Ounet</p>
+<u>Dombouré :</u>
+<p>Gbira : l’un des agés de Dombouré interrogé le 10 Janvier 2023 à Dombouré 
+SAKA (père de Bagui menuisier) : interrogé le 10 Janvier 2023 à Dombouré 
+Badou et sa grande sœur aveugle Yaho : interrogées le 10 Janvier 2023 à 
+Dombouré</p>
+<u>Goumori Bodaha :</u>
+<p>Sabi Gangodo : interrogé 10 Janvier 2023 à Goumori Bodaha 
+Baké Bata, épouse de BANI FELIX interrogée 14 Juin 2024</p>
+<u>Banikoara : </u>
+<p>Baké Parfaite interrogée le 26 octobre 2022  
+Safia, Mère de Issifou méti, interrogée le 4 Janvier 2023 à tokey banta. 
+Bignon Missiré interrogée le 26 Octobre 2022 à Tokey Banta 
+BIO MALLAN Orou interrogé le 26 Octobre 2022 à Wètèrou 
+Délégué BARAGA Hilère interrogé 12 février 2023 à Tokey Banta 
+BARAGA Michel interrogé 20 Janvier 2023 à Tokey Banta 
+BARAGA Sabi Mounou interrogé 3 février 2023Azia Bankoré à Batran le 21 Février 2024 
+Boukari Soumanou, délégué de Batran interrogé le 08 Mars 2024 dans sa ferme 
+Les personnes âgées et chercheuses de la famille OROU YO 
+Assistance : BIO TORO Orou Séïdou alias Gounou Yérima , BIO TORO Bani 
+Gouda Nourou- Dine et OROU YO Bio Christian</p>
+    </div>
+
+<!-- </div> -->
+</body>
+</html>
